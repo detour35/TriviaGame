@@ -22,22 +22,22 @@ var question1 = {
   
   $('#question').html(question1.question);
   
-  // METHOD 1
-//   answers to first question
+//   // METHOD 1
+// //   answers to first question
+// <input type="radio">
+//   $('#answer0').html(question1.answers[0]);
+//   $('#answer1').html(question1.answers[1]);
+//   $('#answer2').html(question1.answers[2]);
+//   $('#answer3').html(question1.answers[3]);
 
-  $('#answer0').html(question1.answers[0]);
-  $('#answer1').html(question1.answers[1]);
-  $('#answer2').html(question1.answers[2]);
-  $('#answer3').html(question1.answers[3]);
-
-for (var i = 0; i < question)
+// for (var i = 0; i < question)
   
-// METHOD 2
+// // METHOD 2
 
-/*
-var answerDivs = $('.answer');
+// /*
+// var answerDivs = $('.answer');
 
-for (var i = 0; i < answerDivs.length; i++) {
-  $(answerDivs[i]).html(question1.answers[i])
-}
-*/
+// for (var i = 0; i < answerDivs.length; i++) {
+//   $(answerDivs[i]).html(question1.answers[i])
+// }
+// */

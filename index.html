@@ -14,55 +14,102 @@ crossorigin="anonymous"></script>
 
 </head>
 <body>
-    
 
 
-    <p id="question">
+    <p id="question">''
         
           </p>
         
-          <div id="answer0" class="answer">
+          <div id="answer0" class="answer"> Smithtown East
         
           </div>
-          <div id="answer1" class="answer">
+          <div id="answer1" class="answer"> Nesconset
         
           </div>
-          <div id="answer2" class="answer">
+          <div id="answer2" class="answer"> Northport
         
           </div>
-          <div id="answer3" class="answer">
+          <div id="answer3" class="answer"> Huntington
         
           </div>
+
+<!-- My tutor last night had troubles linking my javascript to my index.html so he had me put all my javascript into my html file -->
+
 
 <script>
     
     var question1 = {
-    question: 'What planet is farthest from the sun',
-    answers: ['jupiter', 'pluto', 'mars', 'earth'],
+    question: 'What middle school did I go to?',
+    answers: ['Smithtown East', 'Nesconset', 'Northport', 'Huntington'],
     correct: 1
   }
   var question2 = {
-    question: 'What star is farthest from the sun',
-    answers: ['jupiter', 'ja;ldf', 'mars', 'earth'],
+    question: 'What high school did I go to?',
+    answers: ['Smithtown', 'St James', 'Nesconset', 'Patchogue'],
     correct: 1
   }
   var question3 = {
-    question: 'What planet is farthest from the sun',
-    answers: ['jupiter', 'pluto', 'mars', 'earth'],
-    correct: 1
+    question: 'What college did I go to?',
+    answers: ['SUNY Albany', 'SUNY New Paltz', 'SUNY Stony Brook', 'SUNY Plattsburgh'],
+    correct: 2
   }
   var question4 = {
-    question: 'What planet is farthest from the sun',
-    answers: ['jupiter', 'pluto', 'mars', 'earth'],
+    question: 'What city in France did I live in?',
+    answers: ['Besancon', 'Paris', 'Lille', 'Nice'],
     correct: 1
   }
+  var question5 = {
+    question: 'What city in Poland do I live in?',
+    answers: ['Warsaw', 'Garwolin', 'Celestynow', 'Pilawa'],
+    correct: 3
+  }
+  var question6 = {
+    question: 'What school in France did I attend?',
+    answers: ['CLA', 'Universite de France Comte', 'Sorbonne', 'Universite de Lille'],
+    correct: 1
+  }
+  var question7 = {
+    question: 'How long does it take to get from Besancon France to Paris?',
+    answers: ['2 hours', '3 hours', '4 hours', '5 hours'],
+    correct: 2
+  }
+  var question8 = {
+    question: 'How long does it take to get from Pilawa Poland to Warsaw?',
+    answers: ['1 hours', '2 hours', '3 hours', '4 hours'],
+    correct: 1
+  }
+  var question9 = {
+    question: 'What did I study in College?',
+    answers: ['Economics', 'Physics', 'Math', 'Linguistics'],
+    correct: 4
+  }
+  var question10 = {
+    question: 'How long did it take me to finish college?',
+    answers: ['3 years', '4 years', '5 years', '6 years'],
+    correct: 3
+  }
+
   
 //   putting questions into an array
  var questions = [
-      question1,question2,question3,question4
+      question1,question2,question3,question4,question5,question6,question7,question8,question9,question10
   ]    
-  $('#question').html(question1.question);
+
+
   
+for (var i = 0; i < questions.length; i++){
+
+    (questions[i]++);
+    console.log(questions);
+}
+
+
+
+
+
+// in this section above I wanted to make a loop to go through my questions just like the webpage is going through my answers right now.. but I wasn't able to.
+
+
   // METHOD 1
 //   answers to first question
 
@@ -71,37 +118,23 @@ crossorigin="anonymous"></script>
 //   $('#answer2').html(question1.answers[2]);
 //   $('#answer3').html(question1.answers[3]);
 
+var currentQuestion=0;
 $(".answer").click(function(){
-    console.log("this works?")
+    
 
+  $('#answer0').html(questions);
+//   $('#answer1').html(questions[currentQuestion].answers[1]);
+//   $('#answer2').html(questions[currentQuestion].answers[2]);
+//   $('#answer3').html(questions[currentQuestion].answers[3]);
+//   $('#answer4').html(questions[currentQuestion].answers[4]);
+//   $('#answer5').html(questions[currentQuestion].answers[5]);
+//   $('#answer6').html(questions[currentQuestion].answers[6]);
+
+
+  currentQuestion++;
+    console.log(currentQuestion)
 })
    
-for (var i = 0; i < questions.length; i++){
-    $('#answer0').html(question1.answers[0]);
-  $('#answer1').html(question1.answers[1]);
-  $('#answer2').html(question1.answers[2]);
-  $('#answer3').html(question1.answers[3]);
-
-
-}
-  
-// METHOD 2
-
-/*
-var answerDivs = $('.answer');
-
-for (var i = 0; i < answerDivs.length; i++) {
-  $(answerDivs[i]).html(question1.answers[i])
-}
-*/
- 
-    
-    
-    
-    
-    
-    
-    
     
     
     </script>        
