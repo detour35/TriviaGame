@@ -1,3 +1,5 @@
+
+
 var questions = [
   {
     question: 'What middle school did I go to?',
@@ -60,7 +62,7 @@ function displayQuestion() {
 
   var questionObject = questions[Counter];
 
-  $("#question").text(questionObject.question);
+  $("#question").append(questionObject.question);
 
   for(var i = 0; i<questionObject.answers.length; i++ ) {
 
@@ -70,24 +72,32 @@ function displayQuestion() {
 
     if(questionObject.correct == i){
       answerBut.attr("data-correct", true);
+      Counter++
+
     }
     else {
       answerBut.attr("data-correct", false);
+      Counter--
     }
 
     $(".answers").append(answerBut);
 
   }
 
-
-
 }
 
 displayQuestion();
 
 $(document).on("click", ".answer", function () {
-  console.log($(this));
+  
+  //check if they are correct here by getting the data-correct attribute out of 'this'
+  var correct = $(this).attr("data-correct");
+  // if user guess equals data
+
 })
+
+
+
 
   
 // METHOD 2
