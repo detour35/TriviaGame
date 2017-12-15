@@ -47,15 +47,15 @@ var questions = [
     correct: 3
   },
   {
-    question: 'Who was America First MMA Fighter?,
+    question: 'Who was America First MMA Fighter?',
     answers: ['Robert Taft', 'Ben Franklin', 'Theodore Roosevolt', 'Abraham Lincoln'],
     correct: 2
   }
 ]
 
 var Counter = 0;
-  
-  // METHOD 1
+
+// METHOD 1
 //   answers to first question
 
 function displayQuestion() {
@@ -64,13 +64,14 @@ function displayQuestion() {
 
   $("#question").append(questionObject.question);
 
-  for(var i = 0; i<questionObject.answers.length; i++ ) {
+  for (var i = 0; i < questionObject.answers.length; i++) {
 
     var answerBut = $("<button>");
-    answerBut.attr("class","answer");
+    answerBut.attr("class", "answer");
     answerBut.attr("data-input", questionObject.answers[i]);
+    var newButton = answerBut.html(questionObject.answers[i]);
 
-    if(questionObject.correct == i){
+    if (questionObject.correct == i) {
       answerBut.attr("data-correct", true);
       Counter++
 
@@ -84,22 +85,27 @@ function displayQuestion() {
 
   }
 
-}
 
+
+ 
+
+  $("button.answer").on("click", function () {
+
+
+
+
+    //check if they are correct here by getting the data-correct attribute out of 'this'
+    var correct = $(this).attr("data-correct");
+    console.log("I've been clicked");
+    displayQuestion();
+    // if user guess equals data
+  })
+}
 displayQuestion();
 
-$(document).on("click", ".answer", function () {
-  
-  //check if they are correct here by getting the data-correct attribute out of 'this'
-  var correct = $(this).attr("data-correct");
-  // if user guess equals data
-
-})
 
 
 
-
-  
 // METHOD 2
 
 /*
