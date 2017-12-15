@@ -5,90 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     
 <!-- jQuery uncompressed CDN -->
 <script
 src="https://code.jquery.com/jquery-3.2.1.js"
 integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
 crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
 <body>
+<div class="container">
 
+  <div class="row">
 
-    <p id="question">''
-        
-          </p>
-        
-          <div id="answer0" class="answer"> Smithtown East
-        
-          </div>
-          <div id="answer1" class="answer"> Nesconset
-        
-          </div>
-          <div id="answer2" class="answer"> Northport
-        
-          </div>
-          <div id="answer3" class="answer"> Huntington
-        
-          </div>
+    <div class="col-md-3"></div>
 
-<!-- My tutor last night had troubles linking my javascript to my index.html so he had me put all my javascript into my html file -->
+      <div class="col-md-6">
 
+    <div class="question-section">
 
-<script>
+    <p id="question">'this is the question'</p>
+    <div class="answers">
+
+    </div>
+
+    </div>
+        
+
     
-    var question1 = {
-    question: 'What middle school did I go to?',
-    answers: ['Smithtown East', 'Nesconset', 'Northport', 'Huntington'],
-    correct: 1
-  }
-  var question2 = {
-    question: 'What high school did I go to?',
-    answers: ['Smithtown', 'St James', 'Nesconset', 'Patchogue'],
-    correct: 1
-  }
-  var question3 = {
-    question: 'What college did I go to?',
-    answers: ['SUNY Albany', 'SUNY New Paltz', 'SUNY Stony Brook', 'SUNY Plattsburgh'],
-    correct: 2
-  }
-  var question4 = {
-    question: 'What city in France did I live in?',
-    answers: ['Besancon', 'Paris', 'Lille', 'Nice'],
-    correct: 1
-  }
-  var question5 = {
-    question: 'What city in Poland do I live in?',
-    answers: ['Warsaw', 'Garwolin', 'Celestynow', 'Pilawa'],
-    correct: 3
-  }
-  var question6 = {
-    question: 'What school in France did I attend?',
-    answers: ['CLA', 'Universite de France Comte', 'Sorbonne', 'Universite de Lille'],
-    correct: 1
-  }
-  var question7 = {
-    question: 'How long does it take to get from Besancon France to Paris?',
-    answers: ['2 hours', '3 hours', '4 hours', '5 hours'],
-    correct: 2
-  }
-  var question8 = {
-    question: 'How long does it take to get from Pilawa Poland to Warsaw?',
-    answers: ['1 hours', '2 hours', '3 hours', '4 hours'],
-    correct: 1
-  }
-  var question9 = {
-    question: 'What did I study in College?',
-    answers: ['Economics', 'Physics', 'Math', 'Linguistics'],
-    correct: 4
-  }
-  var question10 = {
-    question: 'How long did it take me to finish college?',
-    answers: ['3 years', '4 years', '5 years', '6 years'],
-    correct: 3
-  }
 
+</div>
+
+  
+
+</div>
+<!-- <script>
+    
+    
   
 //   putting questions into an array
  var questions = [
@@ -104,11 +66,7 @@ for (var i = 0; i < questions.length; i++){
 }
 
 
-
-
-
 // in this section above I wanted to make a loop to go through my questions just like the webpage is going through my answers right now.. but I wasn't able to.
-
 
   // METHOD 1
 //   answers to first question
@@ -137,7 +95,10 @@ $(".answer").click(function(){
    
     
     
-    </script>        
+    </script>      -->
+    
+    <!-- My tutor last night had troubles linking my javascript to my index.html so he had me put all my javascript into my html file -->
+<script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>

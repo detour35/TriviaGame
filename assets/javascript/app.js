@@ -1,43 +1,101 @@
-var question1 = {
-    question: 'What planet is farthest from the sun',
-    answers: ['jupiter', 'pluto', 'mars', 'earth'],
+var questions = [
+  {
+    question: 'What middle school did I go to?',
+    answers: ['Smithtown East', 'Nesconset', 'Northport', 'Huntington'],
+    correct: 0
+  },
+  {
+    question: 'What high school did I go to?',
+    answers: ['Smithtown', 'St James', 'Nesconset', 'Patchogue'],
+    correct: 0
+  },
+  {
+    question: 'What college did I go to?',
+    answers: ['SUNY Albany', 'SUNY New Paltz', 'SUNY Stony Brook', 'SUNY Plattsburgh'],
     correct: 1
-  }
-  var question2 = {
-    question: 'What planet is farthest from the sun',
-    answers: ['jupiter', 'pluto', 'mars', 'earth'],
+  },
+  {
+    question: 'What city in France did I live in?',
+    answers: ['Besancon', 'Paris', 'Lille', 'Nice'],
+    correct: 0
+  },
+  {
+    question: 'What city in Poland do I live in?',
+    answers: ['Warsaw', 'Garwolin', 'Celestynow', 'Pilawa'],
+    correct: 3
+  },
+  {
+    question: 'What school in France did I attend?',
+    answers: ['CLA', 'Universite de France Comte', 'Sorbonne', 'Universite de Lille'],
     correct: 1
-  }
-  var question3 = {
-    question: 'What planet is farthest from the sun',
-    answers: ['jupiter', 'pluto', 'mars', 'earth'],
+  },
+  {
+    question: 'How long does it take to get from Besancon France to Paris?',
+    answers: ['2 hours', '3 hours', '4 hours', '5 hours'],
+    correct: 2
+  },
+  {
+    question: 'How long does it take to get from Pilawa Poland to Warsaw?',
+    answers: ['1 hours', '2 hours', '3 hours', '4 hours'],
     correct: 1
+  },
+  {
+    question: 'What did I study in College?',
+    answers: ['Economics', 'Physics', 'Math', 'Linguistics'],
+    correct: 3
+  },
+  {
+    question: 'How long did it take me to finish college?',
+    answers: ['3 years', '4 years', '5 years', '6 years'],
+    correct: 2
   }
-  var question4 = {
-    question: 'What planet is farthest from the sun',
-    answers: ['jupiter', 'pluto', 'mars', 'earth'],
-    correct: 1
-  }
-  
-  
-  $('#question').html(question1.question);
-  
-//   // METHOD 1
-// //   answers to first question
-// <input type="radio">
-//   $('#answer0').html(question1.answers[0]);
-//   $('#answer1').html(question1.answers[1]);
-//   $('#answer2').html(question1.answers[2]);
-//   $('#answer3').html(question1.answers[3]);
+]
 
-// for (var i = 0; i < question)
+var Counter = 0;
   
-// // METHOD 2
+  // METHOD 1
+//   answers to first question
 
-// /*
-// var answerDivs = $('.answer');
+function displayQuestion() {
 
-// for (var i = 0; i < answerDivs.length; i++) {
-//   $(answerDivs[i]).html(question1.answers[i])
-// }
-// */
+  var questionObject = questions[Counter];
+
+  $("#question").text(questionObject.question);
+
+  for(var i = 0; i<questionObject.answers.length; i++ ) {
+
+    var answerBut = $("<button>");
+    answerBut.attr("class","answer");
+    answerBut.attr("data-input", questionObject.answers[i]);
+
+    if(questionObject.correct == i){
+      answerBut.attr("data-correct", true);
+    }
+    else {
+      answerBut.attr("data-correct", false);
+    }
+
+    $(".answers").append(answerBut);
+
+  }
+
+
+
+}
+
+displayQuestion();
+
+$(document).on("click", ".answer", function () {
+  console.log($(this));
+})
+
+  
+// METHOD 2
+
+/*
+var answerDivs = $('.answer');
+
+for (var i = 0; i < answerDivs.length; i++) {
+  $(answerDivs[i]).html(question1.answers[i])
+}
+*/
