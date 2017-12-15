@@ -2,53 +2,53 @@
 
 var questions = [
   {
-    question: 'What middle school did I go to?',
-    answers: ['Smithtown East', 'Nesconset', 'Northport', 'Huntington'],
+    question: 'What material is the UFC Belt made of?',
+    answers: ['Silver', 'Bronze', 'Platinum', 'Gold'],
     correct: 0
   },
   {
-    question: 'What high school did I go to?',
-    answers: ['Smithtown', 'St James', 'Nesconset', 'Patchogue'],
+    question: 'What is Tito Ortiz real name?',
+    answers: ['Jacob', 'Andrew', 'Jose', 'Nick'],
     correct: 0
   },
   {
-    question: 'What college did I go to?',
-    answers: ['SUNY Albany', 'SUNY New Paltz', 'SUNY Stony Brook', 'SUNY Plattsburgh'],
+    question: 'How many years of experience fighting does Dana White have?',
+    answers: ['1', '0', '4', '5'],
     correct: 1
   },
   {
-    question: 'What city in France did I live in?',
-    answers: ['Besancon', 'Paris', 'Lille', 'Nice'],
+    question: 'What other show does Mike Goldberg commentate for?',
+    answers: ['Red Bull Air Race Championship', 'Monster Trucks', 'Ultimate Fighter', 'Battlebots'],
     correct: 0
   },
   {
-    question: 'What city in Poland do I live in?',
-    answers: ['Warsaw', 'Garwolin', 'Celestynow', 'Pilawa'],
+    question: 'Who was the first black belt under the Gracie family?',
+    answers: ['George St. Pierre', 'Tj Dillashaw', 'Nick Diaz', 'Matt Serra'],
     correct: 3
   },
   {
-    question: 'What school in France did I attend?',
-    answers: ['CLA', 'Universite de France Comte', 'Sorbonne', 'Universite de Lille'],
+    question: 'What does Bruce Buffer have a black belt in?',
+    answers: ['Judo', 'Tang Soo Do', 'JKD', 'TKD'],
     correct: 1
   },
   {
-    question: 'How long does it take to get from Besancon France to Paris?',
-    answers: ['2 hours', '3 hours', '4 hours', '5 hours'],
+    question: 'Who has the most KO wins in MMA History?',
+    answers: ['Connor McGregor', 'Nate Diaz', 'Travis Fulton', 'Daniel Cormier'],
     correct: 2
   },
   {
-    question: 'How long does it take to get from Pilawa Poland to Warsaw?',
-    answers: ['1 hours', '2 hours', '3 hours', '4 hours'],
-    correct: 1
+    question: 'Who has the second most submission wins in UFC History?',
+    answers: ['Robbie Lawler', 'Urijah Faber', 'Jeremy Horn', 'Forrest Griffin'],
+    correct: 2
   },
   {
-    question: 'What did I study in College?',
-    answers: ['Economics', 'Physics', 'Math', 'Linguistics'],
+    question: 'Who won the first 155lb UFC belt?',
+    answers: ['Mike Tyson', 'Anderson SIlva', 'Floyd Mayweather', 'BJ Penn'],
     correct: 3
   },
   {
-    question: 'How long did it take me to finish college?',
-    answers: ['3 years', '4 years', '5 years', '6 years'],
+    question: 'Who was America First MMA Fighter?,
+    answers: ['Robert Taft', 'Ben Franklin', 'Theodore Roosevolt', 'Abraham Lincoln'],
     correct: 2
   }
 ]
