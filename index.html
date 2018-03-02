@@ -1,104 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    
-      <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    
-<!-- jQuery uncompressed CDN -->
-<script
-src="https://code.jquery.com/jquery-3.2.1.js"
-integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+<head>
+  <title>UFC Trivia Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <!-- jQuery uncompressed CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
+
 <body>
-<div class="container">
-
-  <div class="row">
-
-    <div class="col-md-3"></div>
-
-      <div class="col-md-6">
-
-    <div class="question-section">
-
-    <p id="question"></p>
-    <div class="answers">
-
+  <div class="wrapper">
+    <h1 id="title">UFC Trivia Game </h1>
+    <div id="subwrapper">
+    <button id="start"> Start </button>
     </div>
-
-    </div>
-        
-
-    
-
-</div>
-
-  
-
-</div>
-<!-- <script>
-    
-    
-  
-//   putting questions into an array
- var questions = [
-      question1,question2,question3,question4,question5,question6,question7,question8,question9,question10
-  ]    
+  </div>
 
 
-  
-for (var i = 0; i < questions.length; i++){
-
-    (questions[i]++);
-    console.log(questions);
-}
 
 
-// in this section above I wanted to make a loop to go through my questions just like the webpage is going through my answers right now.. but I wasn't able to.
-
-  // METHOD 1
-//   answers to first question
-
-//   $('#answer0').html(question1.answers[0]);
-//   $('#answer1').html(question1.answers[1]);
-//   $('#answer2').html(question1.answers[2]);
-//   $('#answer3').html(question1.answers[3]);
-
-var currentQuestion=0;
-$(".answer").click(function(){
-    
-
-  $('#answer0').html(questions);
-//   $('#answer1').html(questions[currentQuestion].answers[1]);
-//   $('#answer2').html(questions[currentQuestion].answers[2]);
-//   $('#answer3').html(questions[currentQuestion].answers[3]);
-//   $('#answer4').html(questions[currentQuestion].answers[4]);
-//   $('#answer5').html(questions[currentQuestion].answers[5]);
-//   $('#answer6').html(questions[currentQuestion].answers[6]);
 
 
-  currentQuestion++;
-    console.log(currentQuestion)
-})
-   
-    
-    
-    </script>      -->
-    
-    <!-- My tutor last night had troubles linking my javascript to my index.html so he had me put all my javascript into my html file -->
-<script src="./assets/javascript/app.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
